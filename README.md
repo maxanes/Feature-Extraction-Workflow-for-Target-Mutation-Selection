@@ -1,3 +1,5 @@
+#This looks good
+
 # Feature-Extraction-Workflow-for-Target-Mutation-Selection
 Bioinformatics pipeline for the extraction of all tumor features necessary for the selection of clonal mutations from whole-exome sequencing (WES) data in tumor-normal settings
 Employs two publicly accessible tools, Mutect2 for the detection of single nucleotide variants (SNV) and insertion and deletion (indel) variants (available at https://gatk.broadinstitute.org/hc/en-us/articles/360037593851-Mutect2), and PureCN for the extraction of essential tumor features such as cancer cell fraction (CCF), multiplicity of mutations, tumor sample purity, and ploidy. (available at https://bioconductor.org/packages/devel/bioc/vignettes/PureCN/inst/doc/Quick.html).
