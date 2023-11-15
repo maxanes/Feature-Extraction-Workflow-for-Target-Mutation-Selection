@@ -11,7 +11,7 @@ Installed conda (available instructions: https://conda.io/projects/conda/en/late
 Tumor and normal bam files of queried sample
 
 ### Provided here
-* workflow.py which is for a one-time run to create necessary files (NormalDB and interval.file) for running sample workflow.py
+* bash script which is for a one-time run to create necessary files (NormalDB and interval.file) for running sample workflow.py
 * workflow.py for creating output for the queried sample
 
 ## Quick start
