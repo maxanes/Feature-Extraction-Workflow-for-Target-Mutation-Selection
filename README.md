@@ -23,23 +23,20 @@ conda env create -f gatk-purecn.yml
 
 **2. In the project folder create a sub-folder for generating NormalDB and the interval file needed to run the pipeline**
 
-* Copy provided one-time run workflow.py
+* Copy provided one-time run bash script
 * Download GRCh38 reference file (GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.gz)
 * Download mappability file for GRCh38 (GCA_000001405.15_GRCh38_no_alt_analysis_set_76.bw)
-
+* Change paths and run the script
+```{bash}
+sbatch create_interval_and_pon.sh
+```
 **3.To set up Slurm back-end, run the following command (described at https://gwf.app/guide/tutorial)**
 
 ```{bash}
 gwf config set backend slurm
 ```
 
-**4.Run one time run gwf workflow.py after adjusting paths within workflow.py file, from the current folder to create NormalDB and interval.file**   
-
-```{bash}
-gwf run
-``` 
-
-**5. After successful generating of necessary files, run gwf workflow.py for queried sample after adjusting paths within workflow.py file**
+**4. After successfully generating of necessary files, run gwf workflow.py for the queried sample(s) after adjusting paths within workflow.py file**
 
 ```{bash}
 gwf run
