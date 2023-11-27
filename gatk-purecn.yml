@@ -1,0 +1,17 @@
+name: gatk-purecn
+channels:
+  - bioconda
+  - conda-forge
+  - gwforg
+dependencies:
+  - r-optparse==1.7.1
+  - bioconductor-purecn=2.0.1
+  - gwf==1.7.2
+  - bioconductor-txdb.hsapiens.ucsc.hg38.knowngene==3.14.0
+  - r-r.utils==2.11.0
+  - gatk4==4.1.9.0
+  - samtools
+  - r-pscbs
+  - bcftools=1.14
+  - bioconductor-org.hs.eg.db
+prefix: /home/mnesic/miniconda3/envs/gatk-purecn
