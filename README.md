@@ -28,7 +28,7 @@ conda env create -f gatk-purecn.yml
 * Download mappability file for GRCh38 (GCA_000001405.15_GRCh38_no_alt_analysis_set_76.bw)
 * Change paths and run the script
 ```{bash}
-./ create_interval_and_pon.sh
+./create_interval_and_pon.sh
 ```
 **3.To set up Slurm back-end, run the following command (described at https://gwf.app/guide/tutorial)**
 
