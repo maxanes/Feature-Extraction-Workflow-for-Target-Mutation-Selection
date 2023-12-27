@@ -127,15 +127,15 @@ def run_purecn(tumor_bam, pon, purecn_vcf, intervals, config, output_folder):
 gwf = Workflow(defaults={'account': 'genomic-struct'})
 
 config = {
-    "normal-bam": "/faststorage/project/genomic-struct/Workspaces/mnesic/WEStest/PureCN/test_pipeline_paper/C45A10589D_buffycoat.normal.alignment.bam", #Path/to/normal_bam_file
-    "tumor-bam": "/faststorage/project/genomic-struct/Workspaces/mnesic/WEStest/PureCN/test_pipeline_paper/C23T10589D_ffpe.tumor.alignment.bam",#Path/to/tumor_bam_file
-    "genome-fasta": "/faststorage/project/MomaReference/BACKUP/hg38/reference_genome/GCA_000001405.15_GRCh38_no_alt_analysis_set.GRC_exclusions_masked.fna", #Path/to/fasta_file
-    "db-snps": "/home/mnesic/PureCN/extrafiles/1000G_phase1.snps.high_confidence.hg38.vcf.gz", #Path/to/DB_file
-    "pon": "/faststorage/project/MomaReference/BACKUP/hg38/research/purecn/pon/normalDB_twist_hg38.rds", #Path/to/created_NormalDB_file
-    "target-intervals": "/faststorage/project/MomaReference/BACKUP/hg38/research/purecn/intervals/baits_hg38_intervals.txt", #Path/to/created_interval_file
+    "normal-bam": "PATH-TO-INDEXED-NORMAL-BAM-FILE",
+    "tumor-bam": "PATH-TO-TUMOR-BAM-FILE",
+    "genome-fasta": "PATH-TO-DOWNLOADED-FASTA-FILE", 
+    "db-snps": "PATH-TO-DOWNLOADED-DB-FILE-EXAMPLE-1000G_phase1.snps.high_confidence.hg38.vcf.gz", 
+    "pon": "PATH-TO-CREATED-NORMAL-DB-FILE", 
+    "target-intervals": "PATH-TO-CREATED-interval-file", 
     "sample-names": {
-        "tumor": "C23T10589D_ffpe",
-        "normal": "C45A10589D_buffycoat"
+        "tumor": "TUMOR-NAME",
+        "normal": "BUFFYCOAT-NAMEt"
     }
 }
 
