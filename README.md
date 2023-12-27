@@ -39,5 +39,3 @@ gwf config set backend slurm
 ```{bash}
 gwf run
 ``` 
-
-## Cite
