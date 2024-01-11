@@ -35,7 +35,7 @@ conda env create -f gatk-purecn.yml
 gwf config set backend slurm
 ```
 
-**4. After successfully generating of necessary files, run gwf workflow.py for the queried sample(s) after adjusting paths within workflow.py file**
+**4. After successfully generating of necessary files, run gwf workflow.py for the queried sample(s) after adjusting paths within workflow.py (under config) file**
 
 ```{bash}
 gwf run
